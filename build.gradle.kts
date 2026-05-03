@@ -15,7 +15,7 @@ prism {
             description = "Adds compatibility between Corpse and Curios"
             license = "MIT"
             author("Leclowndu93150")
-            version = "4.0.1"
+            version = "4.0.2"
         }
         publishing {
             type = BETA
@@ -43,7 +43,8 @@ prism {
             }
         }
         version("26.1") {
-            minecraftVersions("26.1", "26.1.1")
+            changelog = "- Fixed curios version range in mod metadata"
+            minecraftVersions("26.1", "26.1.1", "26.1.2")
             neoforge {
                 loaderVersion = "26.1.0.1-beta"
                 loaderVersionRange = "[4,)"
@@ -126,7 +127,8 @@ prism {
             }
         }
         version("26.1") {
-            minecraftVersions("26.1", "26.1.1")
+            changelog = "- Fixed curios version range in mod metadata"
+            minecraftVersions("26.1", "26.1.1", "26.1.2")
             neoforge {
                 loaderVersion = "26.1.0.1-beta"
                 loaderVersionRange = "[4,)"
@@ -151,6 +153,7 @@ prism {
             }
         }
         version("1.20.1") {
+            changelog = "- Fixed missing refmap entry in mixin config"
             forge {
                 loaderVersion = "47.4.0"
                 loaderVersionRange = "[47,)"
@@ -210,6 +213,7 @@ prism {
             }
         }
         version("1.20.1") {
+            changelog = "- Fixed missing refmap entry in mixin config"
             forge {
                 loaderVersion = "47.4.0"
                 loaderVersionRange = "[47,)"
