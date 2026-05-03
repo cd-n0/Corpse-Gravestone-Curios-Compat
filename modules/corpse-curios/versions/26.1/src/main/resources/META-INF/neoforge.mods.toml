@@ -22,27 +22,27 @@ side = "BOTH"
 [[dependencies.${mod_id}]]
 modId = "minecraft"
 type = "required"
-versionRange = "[26.1,27)"
+versionRange = "*"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "corpse"
 type = "required"
-versionRange = "[1.1.2,)"
+versionRange = "*"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "curios"
 type = "required"
-versionRange = "[15.0.0,)"
+versionRange = "*"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "baguettelib"
 type = "required"
-versionRange = "[2.0.0,)"
+versionRange = "*"
 ordering = "NONE"
 side = "BOTH"
