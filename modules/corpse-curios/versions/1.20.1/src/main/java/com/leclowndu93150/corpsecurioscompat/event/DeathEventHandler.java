@@ -11,7 +11,7 @@ import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.type.capability.ICuriosItemHandler;
 import top.theillusivec4.curios.api.type.inventory.ICurioStacksHandler;
 import net.minecraft.world.level.GameRules;
-import top.theillusivec4.curios.common.CuriosConfig;
+//import top.theillusivec4.curios.common.CuriosConfig;
 
 import java.util.Map;
 
@@ -21,7 +21,7 @@ public class DeathEventHandler {
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void onPlayerDeathPre(PlayerDeathEvent.Pre event) {
         Player player = event.getPlayer();
-        if (areCuriosKept(player)) return;
+//        if (areCuriosKept(player)) return;
 
         var curioHandlerOptional = CuriosApi.getCuriosHelper().getCuriosHandler(player);
         if (!curioHandlerOptional.isPresent()) return;
@@ -49,10 +49,10 @@ public class DeathEventHandler {
         }
     }
 
-    private static boolean areCuriosKept(Player player) {
-        CuriosConfig.KeepCurios setting = CuriosConfig.SERVER.keepCurios.get();
-        if (setting == CuriosConfig.KeepCurios.ON) return true;
-        if (setting == CuriosConfig.KeepCurios.OFF) return false;
-        return player.level().getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY);
-    }
+//    private static boolean areCuriosKept(Player player) {
+//        CuriosConfig.KeepCurios setting = CuriosConfig.SERVER.keepCurios.get();
+//        if (setting == CuriosConfig.KeepCurios.ON) return true;
+//        if (setting == CuriosConfig.KeepCurios.OFF) return false;
+//        return player.level().getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY);
+//    }
 }

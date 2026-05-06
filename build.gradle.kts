@@ -74,7 +74,7 @@ prism {
                 loaderVersionRange = "[47,)"
                 dependencies {
                     modImplementation("curse.maven:corpse-316582:7018272")
-                    modImplementation("curse.maven:curios-309927:6418456")
+                    modImplementation("curse.maven:accessories-cc-layer-1005683:5786436")
                     modImplementation("curse.maven:baguettelib-1264423:7544807")
                     modRuntimeOnly("curse.maven:artifacts-312353:7880372")
                     modRuntimeOnly("curse.maven:cloth-config-348521:5729105")
